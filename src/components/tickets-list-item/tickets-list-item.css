@@ -1,0 +1,114 @@
+.tickets-list-item{
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+.tickets-list-item .right-block{
+    border-right: 1px solid #ECEFF1;
+    padding: 25px;
+    max-width: 280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tickets-list-item .right-block .img-wrap{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn{
+    background-color: #FF6D00;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 5px 60px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+.btn:hover{
+    background-color: #E46A0E;
+    color: #ffffff;
+}
+
+.btn span{
+    display: block;
+}
+
+.ticket-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+    padding: 18px 25px;
+}
+
+.ticket-info-block .time{
+    font-size: 42px;
+    text-transform: uppercase;
+    color: #4a4a4a;
+}
+
+.ticket-info-block .destination-name{
+    color: #4a4a4a;
+}
+
+.ticket-info-block .date{
+    color: #8b9497;
+}
+
+.ticket-info-transfer{
+    text-transform: uppercase;
+    color: #8b9497;
+    margin-top: 12px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    right: 13px;
+    width: 150px;
+    text-align: center;
+    height: 30px;
+}
+
+.ticket-info-transfer::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #D2D5D6;
+}
+
+.ticket-info-transfer::before{
+    content: '';
+    position: absolute;
+    background-image: url(plane-icon.png);
+    width: 13px;
+    height: 13px;
+    right: -15px;
+    bottom: -6px;
+}

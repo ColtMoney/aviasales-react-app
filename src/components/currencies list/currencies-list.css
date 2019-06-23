@@ -1,0 +1,55 @@
+.сurrency-box{
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.сurrency-box li{
+    padding: 10px 20px;
+    text-align: center;
+    color: #2196f3;
+    text-transform: uppercase;
+    border: 1px solid #D2D5D6;
+    cursor: pointer;
+    flex-grow: 1;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.сurrency-box li.active{
+    background-color: #2196F3;
+    color: #ffffff;
+    border: 1px solid #2196F3;
+}
+
+.сurrency-box li:not(:first-child){
+    margin-left: -1px;
+}
+
+.сurrency-box li:first-child{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.сurrency-box li:last-child{
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.сurrency-box li:hover{
+    border: 1px solid #64B5F5;
+    background-color: #F2FCFF;
+    z-index: 1;
+}
+
+.сurrency-box li.active:hover{
+    background-color: #2196F3;
+    color: #ffffff;
+    border: 1px solid #2196F3;
+}
